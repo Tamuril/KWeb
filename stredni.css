@@ -1,0 +1,115 @@
+.wrapper {
+	display: flex;
+	max-width: 64em;
+	flex-grow: 100;
+	max-width: 64em;
+
+	align-items: center;
+}
+
+body {
+	margin: 0px;
+}
+
+header{
+	position: sticky;
+	top: 0px;
+
+	background-color: #2867af;
+	width: 100vw;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+}
+
+header > .wrapper {
+	justify-content: space-around;
+	text-align: center;
+}
+
+header > .wrapper > .tags{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+	justify-content: center;
+	align-items: center;
+
+	padding: 5px;
+}
+
+header > .wrapper > .search{
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+header > .wrapper > .title{
+	display: flex;
+	flex-grow: 2;
+	justify-content: center;
+	align-items: center;
+	
+	font-size: 2em;
+	font-weight: bold;
+}
+
+body > .main {
+	display: flex;
+	flex-direction: row;
+}
+
+body > .main > .wrapper{
+	background-color: white;
+	flex-direction: column;
+}
+
+.main > .ad {
+	background-color: red;
+	z-index: -1;
+	flex-grow: 1;
+	position: sticky;
+	height: auto;
+}
+
+.main > .ad > .banner {
+	background-image: url(https://img.grada.cz/_t_/media/sprinx.bookimages/758657_600_0_fit.jpg);
+	height: 90vh;
+	position: sticky;
+	top: 10vh;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+/**
+Jedna se o media query aby se reklamy po bocich neukazovali na mobilu
+
+#@media screen and (min-width: 640em) {
+#}
+**/
+
+article{
+	background-color: #37fa6c;
+	margin: 10px;
+	flex-grow: 1;
+	padding: 5px; 
+
+	display: flex;
+	text-overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
+}
+
+article > .text{
+	
+}
+
+footer{
+	background-color: #99dcd9;
+	height: 30px;
+	width: 100vw;
